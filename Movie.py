@@ -5,7 +5,7 @@ import colorsys
 from PIL import Image
 
 # (1) Import the file to be analyzed!
-img_file = Image.open("thedress.jpg")
+img_file = Image.open(image)
 img = img_file.load()
 
 # (2) Get image width & height in pixels
@@ -80,3 +80,4 @@ for x in xrange(0, xs):
     r /= 255.0
     g /= 255.0
     b /= 255.0
+print(img)
